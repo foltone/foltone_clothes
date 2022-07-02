@@ -21,14 +21,3 @@ ALTER TABLE `user_clothes`
   ADD KEY `name` (`name`),
   ADD KEY `clothe` (`clothe`(768)),
   ADD KEY `identifier` (`identifier`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `user_clothes`
---
-ALTER TABLE `user_clothes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
-COMMIT;
