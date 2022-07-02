@@ -6,7 +6,7 @@ CREATE TABLE `user_clothes` (
   `id` int(11) NOT NULL,
   `identifier` varchar(50) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `clothe` text NOT NULL DEFAULT ''
+  `clothe` text NOT NULL DEFAULT 'no name'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
