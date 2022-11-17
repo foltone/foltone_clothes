@@ -125,7 +125,6 @@ function GetComponent()
         table.insert(bags_1c, i)
     end
 end  
-GetComponent()
 
 local MenuVetement = RageUI.CreateMenu("Vetement", 'Vetement');
 local magasin = RageUI.CreateSubMenu(MenuVetement, "Vetement", "Vetement")
@@ -433,6 +432,7 @@ Citizen.CreateThread(function()
                     FreezeEntityPosition(PlayerPedId(), false)
                 end
                 if IsControlJustPressed(1, 51) then
+                    GetComponent()
                     open = true
 					RageUI.Visible(MenuVetement, not RageUI.Visible(MenuVetement))
                 end
